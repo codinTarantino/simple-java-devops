@@ -2,7 +2,7 @@
 echo ===== Compiling Java Files =====
 cd %WORKSPACE%
 if not exist bin mkdir bin
-javac -d bin .\\simple-java-devops\\src\\com\\example\\App.java .\\simple-java-devops\\src\\com\\example\\AppTest.java
+javac -d bin .\src\com\example\App.java .\src\com\example\AppTest.java
 if %ERRORLEVEL% NEQ 0 (
     echo ❌ Build failed!
     exit /b 1
